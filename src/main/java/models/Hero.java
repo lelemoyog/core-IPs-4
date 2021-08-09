@@ -1,14 +1,16 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Hero {
-    private String name;
+    private int id;
     private static ArrayList<Hero> instances = new ArrayList<>();
+    private String name;
     private int age;
     private String specialPower;
     private String weakness;
-    private int id;
+
 
     public Hero(String name,int age,String specialPower,String weakness) {
         this.name=name;
@@ -19,12 +21,14 @@ public class Hero {
         this.id = instances.size();
     }
 
+
     public static ArrayList<Hero> getAll(){
         return instances;
     }
 
     public static void clearAllHeroes(){
-        instances.clear();}
+        instances.clear();
+        }
 
     public void setName(String name) {
         this.name = name;
@@ -75,5 +79,8 @@ public class Hero {
 
     public void deleteHero() {
         instances.remove(id-1);
+
     }
+
+
 }
