@@ -1,0 +1,17 @@
+{{#partial "content"}}
+<div class="container">
+<small>A place for heroes of a kinds ,create the perfect Squad depending on heroes abilities!</small>
+    <h2>heroes list!</h2>
+
+
+    {{#if heroes}} <!--if posts exist, then -->
+        {{#each heroes}} <!--loop-->
+
+           <p>Hero name:{{ name }} <a href="/heroes/{{id}}">read more...</a></p> <!--show-->
+        {{/each}}
+    {{else}} <!--no posts!-->
+    <p>no heroes yet!</p>
+    {{/if}}
+ </div>
+{{/partial}}
+{{> layout.hbs}}
