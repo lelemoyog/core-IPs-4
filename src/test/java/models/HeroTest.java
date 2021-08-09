@@ -10,6 +10,7 @@ import static org.junit.Assert.*;
 public class HeroTest {
     @Before
     public void setUp() throws Exception {
+        Hero.clearAllHeroes();
     }
 
     @After
