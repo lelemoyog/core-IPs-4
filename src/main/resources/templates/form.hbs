@@ -23,6 +23,14 @@
      <label for="age">Age</label>
      <input id="age" name="age" class="form-control" type="number">
    </div>
+   <div class="form-group">
+    <label for="squad_Id">select Squad:</label>
+                 <select id="squad_Id" name="squad_Id">
+                     {{#each squads}}
+                         <option value="{{squadId}}">{{name}}</option>
+                     {{/each}}
+                 </select>
+    </div>
  <button type="submit" class="btn">Go!</button>
 </form>
 <!--form.hbs.-->

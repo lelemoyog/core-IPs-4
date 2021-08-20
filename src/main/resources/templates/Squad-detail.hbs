@@ -1,0 +1,14 @@
+{{#partial "content"}}
+   <h1>{{squad.name}}</h1>
+   <p>Here are all the tasks listed in this category:</p>
+   <ul>
+       {{#each heroes}}
+           <li>
+               <p><a href="/squads/{{squad.id}}/squads/{{id}}">{{description}}</a></p>
+           </li>
+       {{/each}}
+   </ul>
+ <a href="/">Go back</a>
+{{/partial}}
+
+{{> layout.hbs}}

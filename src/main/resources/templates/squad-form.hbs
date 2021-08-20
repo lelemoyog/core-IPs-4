@@ -1,0 +1,16 @@
+{{#partial "title" }}
+  welcome from Afar!
+{{/partial}}
+
+{{#partial "content"}}
+<h1>Add Squad!</h1>
+<form action='/squads/new' method="post">
+ <div class="form-group">
+   <label for="squad">Squad name</label>
+   <input id="squad" name="squad" class="form-control" type="text">
+ </div>
+  <button type="submit" class="btn">Go!</button>
+ </form>
+ {{/partial}}
+
+ {{> layout.hbs}}
